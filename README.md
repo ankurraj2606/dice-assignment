@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
 First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+first run npm install, after that add your github personal access token for authentication in the const.js file.
+
+then run npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## App Flow
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+At first, the input box would be empty.
 
-## Learn More
+- Add some text query whatever you want to search the repo for. Like any stack like java, python, ai orr any other thing.
+- Since, debouncing is employed, so after 1s of typing you will get the repos on the UI.
+- After the list of cards is coming, you can sort it using the dropdown on various parameters.
 
-To learn more about Next.js, take a look at the following resources:
+## Features Built
+- A search field which queries on public repos
+- Data fetched from repos
+- Card is having these details : Avatar, Repo name, Stars, Description, language , topics , updatedAt, watcher's count
+- A sort field is there with the following options to take as a parameter for sorting : Stars, watchers count, score, name,created_at, updated_at.
+- An awesome UI similar to the github one.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Tech Stacks Used
+- NextJS
+- ReactJS
+- Tailwind css
+- react-icons
+- git
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Concepts Used
+- Sorting
+- Debouncing
+- map
+- fetch api call
+
